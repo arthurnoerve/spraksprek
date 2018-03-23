@@ -9,6 +9,8 @@
 	<meta name="HandheldFriendly" content="True" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+	<link href="https://fonts.googleapis.com/css?family=Amiri" rel="stylesheet">
+
 	<link rel="stylesheet" type="text/css" href="{{asset "css/style.css"}}" />
 
 	{{ghost_head}}
@@ -25,8 +27,27 @@
 
 		<footer id="footer">
 			<div class="inner">
+
+				{{!-- Language tags --}}
+				<div class="footer-tags">
+					{{>language-tags}}
+				</div>
+
+				{{!-- Other tags --}}
+				<div class="footer-tags">
+					{{>other-tags}}
+				</div>
+
+
 				<section class="credits">
-					<span class="credits-theme">{{t "Theme" }} <a href="https://github.com/zutrinken/attila">Attila</a> {{t "by"}} <a href="http://zutrinken.com" rel="nofollow">zutrinken</a></span>
+					<span class="credits-theme">
+						{{t "Theme" }}
+						<a href="https://github.com/zutrinken/attila">Attila</a>
+						{{t "by"}}
+						<a href="http://zutrinken.com" rel="nofollow">zutrinken</a>
+						{{t "modified by"}}
+						<a href="http://avgar.de" rel="nofollow">arthurnoerve</a>
+					</span>
 					<span class="credits-software">{{t "Published with"}} <a href="http://ghost.org">Ghost</a></span>
 				</section>
 			</div>

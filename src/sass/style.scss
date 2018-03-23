@@ -383,6 +383,19 @@ img {
 	}
 }
 
+
+
+/* ==========================================================================
+   Language stuff
+   ========================================================================== */
+.chinese, .japanese {
+    font-family: Georgia, "Times New Roman", "KaiTi", "楷体", STKaiti, "华文楷体", serif;
+}
+.arabic {
+    font-family: 'Amiri', serif;
+}
+
+
 /* ==========================================================================
    Header
    ========================================================================== */
@@ -466,6 +479,12 @@ img {
 }
 .home-template .blog-name {
 	font-size: 3em;
+}
+.tag-template .blog-name {
+	font-size: 2em;
+}
+.tag-template .blog-name span {
+    font-weight: 100;
 }
 .has-cover .blog-name {
 	color: $color-white;
@@ -595,6 +614,7 @@ img {
 	box-shadow: inset -2px 0 7px rgba(0,0,0,0.1);
 	transform: translate3d(16em,0,0);
 	transition: all ease-out 0.25s;
+
 }
 .menu-active #menu {
 	transform: translate3d(0,0,0);
@@ -715,6 +735,18 @@ img {
 	font-weight: 500;
 }
 
+#menu .nav-box {
+    display: block;
+    padding: 0 2em;
+    font-size: 0.75em;
+    text-align: justify;
+    /*color: #212226;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    font-weight: 400;*/
+    margin-bottom: 7em;
+}
+
 /* ==========================================================================
    Reading Progress
    ========================================================================== */
@@ -770,6 +802,14 @@ img {
 }
 .credits-software {
 	float: right;
+}
+
+.footer-tags {
+	font-size: 0.8em;
+	line-height: 2em;
+	padding: 1.1em 0;
+	overflow: auto;
+    text-align: center;
 }
 
 /* ==========================================================================
