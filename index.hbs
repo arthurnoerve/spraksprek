@@ -13,12 +13,15 @@
 			</span>
 			{{/if}}
 		</nav>
+		
 		<h1 class="blog-name"><a href="{{@blog.url}}">{{@blog.title}}</a></h1>
+
 		{{#if @blog.description}}
-		<span class="blog-description">{{@blog.description}}</span>
+			<span class="blog-description">{{@blog.description}}</span>
 		{{/if}}
+
 		{{#if @blog.cover_image}}
-		<div class="blog-cover cover" style="background-image: url('{{img_url @blog.cover_image}}');"></div>
+			<div class="blog-cover cover" style="background-image: url('{{img_url @blog.cover_image}}');"></div>
 		{{/if}}
 	</div>
 </header>

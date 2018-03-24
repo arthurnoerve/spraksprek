@@ -28,25 +28,30 @@
 		<footer id="footer">
 			<div class="inner">
 
-				{{!-- Language tags --}}
 				<div class="footer-tags">
-					{{>language-tags}}
-				</div>
+					{{!-- Language tags --}}
+					<h4 class="tags-name">{{t "Languages"}}</h4>
+					<div class="tags">
+						{{>language-tags separator=" &bull; "}}
+					</div>
 
-				{{!-- Other tags --}}
-				<div class="footer-tags">
-					{{>other-tags}}
+
+					{{!-- Other tags --}}
+					<h4 class="tags-name">{{t "Other tags"}}</h4>
+					<div class="tags">
+						{{>other-tags separator=" &bull; "}}
+					</div>
 				</div>
 
 
 				<section class="credits">
 					<span class="credits-theme">
 						{{t "Theme" }}
-						<a href="https://github.com/zutrinken/attila">Attila</a>
+						<a href="https://github.com/arthurnoerve/genghis">Genghis</a>
 						{{t "by"}}
-						<a href="http://zutrinken.com" rel="nofollow">zutrinken</a>
-						{{t "modified by"}}
 						<a href="http://avgar.de" rel="nofollow">arthurnoerve</a>
+						/
+						<a href="http://zutrinken.com" rel="nofollow">zutrinken</a>
 					</span>
 					<span class="credits-software">{{t "Published with"}} <a href="http://ghost.org">Ghost</a></span>
 				</section>

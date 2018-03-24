@@ -787,7 +787,7 @@ img {
 	text-align: center;
 	font-size: 0.625em;
 	line-height: 1em;
-	padding: 1.1em 0;
+	padding: 2em 0;
 	overflow: auto;
 	opacity: 0.5;
 }
@@ -805,12 +805,56 @@ img {
 }
 
 .footer-tags {
-	font-size: 0.8em;
-	line-height: 2em;
-	padding: 1.1em 0;
-	overflow: auto;
-    text-align: center;
+    border-bottom: 1px solid #e5e4e1;
+    padding: 1.5em 0;
+    margin-bottom: 2em;
 }
+
+h4.tags-name {
+    margin: 0 0 0.5em 0;
+}
+.footer-tags .tags:first-of-type {
+    margin-bottom: 1.5em;
+}
+
+.footer-tags a {
+    text-transform:capitalize;
+}
+
+
+
+/* ==========================================================================
+   Tags
+   ========================================================================== */
+
+.tags {
+	font-family: 'Fira Sans', sans-serif;
+
+}
+.tags a {
+	display: inline-block;
+	margin: 0 0.334em 0.667em 0;
+	padding: 0.575em 1em;
+	background: $color-white;
+	border: 1px solid $primary-color;
+	font-size: 0.75em;
+	font-weight: 500;
+	line-height: 1.334em;
+	text-align: center;
+	text-decoration: none;
+	color: $primary-color;
+	border-radius: 2em;
+	transition: all ease 0.3s;
+	box-sizing: border-box;
+}
+.tags a:hover,
+.tags a:focus {
+	background: $primary-color;
+	color: $color-white;
+}
+
+
+
 
 /* ==========================================================================
    Index
