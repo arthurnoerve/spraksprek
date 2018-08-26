@@ -14,9 +14,23 @@
 			{{/if}}
 			{{#if @labs.subscribers}}
 			<li class="nav-subscribe"><a href="{{@blog.url}}/subscribe/"><i class="ic ic-mail"></i> {{t "Subscribe"}}</a></li>
+			{{!--
 			{{else}}
 			<li class="nav-rss"><a href="{{@blog.url}}/rss/"><i class="ic ic-rss"></i> {{t "Subscribe"}}</a></li>
+			--}}
 			{{/if}}
 		</ul>
+
+		<p class="nav-label">{{t "Tags"}}</p>
+
+		<div class="nav-box">
+			{{#get "tags" limit="all"}}
+				{{tags separator=" &bull; "}}
+			{{/get}}
+		</div>
+
+
+
+
 	</div>
 </nav>

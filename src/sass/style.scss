@@ -383,6 +383,19 @@ img {
 	}
 }
 
+
+
+/* ==========================================================================
+   Language stuff
+   ========================================================================== */
+.chinese, .japanese {
+    font-family: Georgia, "Times New Roman", "KaiTi", "楷体", STKaiti, "华文楷体", serif;
+}
+.arabic {
+    font-family: 'Amiri', serif;
+}
+
+
 /* ==========================================================================
    Header
    ========================================================================== */
@@ -466,6 +479,12 @@ img {
 }
 .home-template .blog-name {
 	font-size: 3em;
+}
+.tag-template .blog-name {
+	font-size: 2em;
+}
+.tag-template .blog-name span {
+    font-weight: 100;
 }
 .has-cover .blog-name {
 	color: $color-white;
@@ -595,6 +614,7 @@ img {
 	box-shadow: inset -2px 0 7px rgba(0,0,0,0.1);
 	transform: translate3d(16em,0,0);
 	transition: all ease-out 0.25s;
+
 }
 .menu-active #menu {
 	transform: translate3d(0,0,0);
@@ -715,6 +735,18 @@ img {
 	font-weight: 500;
 }
 
+#menu .nav-box {
+    display: block;
+    padding: 0 2em;
+    font-size: 0.75em;
+    text-align: justify;
+    /*color: #212226;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    font-weight: 400;*/
+    margin-bottom: 7em;
+}
+
 /* ==========================================================================
    Reading Progress
    ========================================================================== */
@@ -755,7 +787,7 @@ img {
 	text-align: center;
 	font-size: 0.625em;
 	line-height: 1em;
-	padding: 1.1em 0;
+	padding: 2em 0;
 	overflow: auto;
 	opacity: 0.5;
 }
@@ -771,6 +803,58 @@ img {
 .credits-software {
 	float: right;
 }
+
+.footer-tags {
+    border-bottom: 1px solid #e5e4e1;
+    padding: 1.5em 0;
+    margin-bottom: 2em;
+}
+
+h4.tags-name {
+    margin: 0 0 0.5em 0;
+}
+.footer-tags .tags:first-of-type {
+    margin-bottom: 1.5em;
+}
+
+.footer-tags a {
+    text-transform:capitalize;
+}
+
+
+
+/* ==========================================================================
+   Tags
+   ========================================================================== */
+
+.tags {
+	font-family: 'Fira Sans', sans-serif;
+
+}
+.tags a {
+	display: inline-block;
+	margin: 0 0.334em 0.667em 0;
+	padding: 0.575em 1em;
+	background: $color-white;
+	border: 1px solid $primary-color;
+	font-size: 0.75em;
+	font-weight: 500;
+	line-height: 1.334em;
+	text-align: center;
+	text-decoration: none;
+	color: $primary-color;
+	border-radius: 2em;
+	transition: all ease 0.3s;
+	box-sizing: border-box;
+}
+.tags a:hover,
+.tags a:focus {
+	background: $primary-color;
+	color: $color-white;
+}
+
+
+
 
 /* ==========================================================================
    Index

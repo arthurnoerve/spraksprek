@@ -27,8 +27,8 @@ module.exports = function(grunt) {
 	                src: '*',
                     cwd: 'src/font/',
                     expand: true
-                }]		        
-	        } 
+                }]
+	        }
         },
         clean: {
             dev: ['dev'],
