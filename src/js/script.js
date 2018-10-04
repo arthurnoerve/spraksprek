@@ -11,19 +11,19 @@ jQuery(function($) {
 	function menu() {
 		html.toggleClass('menu-active');
 	};
-	
+
 	$('#menu').on({
 		'click': function() {
 			menu();
 		}
 	});
-	
+
 	$('.menu-button').on({
 		'click': function() {
 			menu();
 		}
 	});
-	
+
 	$('.hidden-close').on({
 		'click': function() {
 			menu();
@@ -33,7 +33,7 @@ jQuery(function($) {
 	/* ==========================================================================
 	   Parallax cover
 	   ========================================================================== */
-	   
+
 	var cover = $('.cover');
 	var coverPosition = 0;
 
@@ -67,7 +67,7 @@ jQuery(function($) {
 	   ========================================================================== */
 
 	var post = $('.post-content');
-	
+
 	function readingProgress() {
 		if(post.length >= 1) {
 			var postBottom = post.offset().top + post.height();
@@ -133,11 +133,11 @@ jQuery(function($) {
 		$('#wrapper').fitVids();
 	}
 	video();
-	
+
 	/* ==========================================================================
 	   Initialize and load Disqus
 	   ========================================================================== */
-	
+
 	if (typeof disqus === 'undefined') {
 		$('.post-comments').css({
 			'display' : 'none'
