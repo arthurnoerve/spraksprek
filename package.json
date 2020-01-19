@@ -2,22 +2,22 @@
   "name": "genghis",
   "description": "Ghost Theme",
   "demo": "http://genghis.avgar.de",
-  "homepage": "http://genghis.avgar.de",
-  "version": "1.0.0",
+  "homepage": "http://genghis.noerve.com",
+  "version": "2.0.0",
   "engines": {
-    "ghost": ">=1.0.0"
+    "ghost": ">=2.1.0"
   },
   "license": "MIT",
   "screenshots": {
     "desktop": "src/screenshot-desktop.jpg",
     "mobile": "src/screenshot-mobile.jpg"
   },
-  "author": {
-    "name": "Arthur Schei Nørve",
-    "email": "arthur@avgar.de",
-    "url": "https://avgar.de"
-  },
   "contributors": {
+    "name": "Arthur Schei Nørve",
+    "email": "arthur@noerve.com",
+    "url": "https://arthurnoerve.com"
+  },
+  "author": {
     "name": "Peter Amende",
     "email": "xoxo@zutrinken.com",
     "url": "http://zutrinken.com"
@@ -41,11 +41,11 @@
   },
   "devDependencies": {
     "autoprefixer-core": "^6.0.1",
-    "grunt": "^1.0.1",
+    "grunt": "^1.0.3",
     "grunt-contrib-clean": "^1.1.0",
     "grunt-contrib-copy": "^1.0.0",
-    "grunt-contrib-uglify": "^3.3.0",
-    "grunt-contrib-watch": "^1.0.0",
+    "grunt-contrib-uglify": "^3.4.0",
+    "grunt-contrib-watch": "^1.1.0",
     "grunt-postcss": "^0.9.0",
     "grunt-sass": "^2.1.0",
     "load-grunt-tasks": "^3.5.2"

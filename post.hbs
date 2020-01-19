@@ -3,47 +3,6 @@
 
 {{#post}}
 
-{{#contentFor "theme_head"}}
-
-	<script type="application/ld+json">
-		{
-			"@context": "http://schema.org",
-			"@type": "BreadcrumbList",
-			"itemListElement": [
-				{{#primary_tag}}
-				{
-					"@type": "ListItem",
-					"position": 1,
-					"item": {
-						"@id": "{{url}}",
-						"name": "{{name}}",
-						"image": "{{img_url feature_image absolute=true}}"
-					}
-				}
-				{{/primary_tag}}
-			]
-		}
-	</script>
-	<script type="application/ld+json">
-	{
-		"@context": "http://schema.org",
-		"@type": "NewsArticle",
-		"headline": "{{title}}",
-		{{#if feature_image}}
-		"image": [
-			"{{img_url feature_image absolute="true" }}"
-		]
-		{{/if}}
-
-
-	}
-</script>
-
-{{/contentFor}}
-
-
-
-
 	<div class="progress-container">
 		<span class="progress-bar"></span>
 	</div>

@@ -1,0 +1,63 @@
+ul.conversation {
+    list-style: none !important;
+    margin: 0;
+    padding: 0;
+    overflow: auto;
+}
+
+ul.conversation li {
+    font-size: 1.5rem;
+    display: inline-block;
+    clear: both;
+    padding: 0.1rem 1.5rem;
+    border-radius: 1.7rem;
+    margin-bottom: 2px;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+ul.conversation > li:before {
+    content: "";
+}
+
+.him {
+    background: #eee;
+    float: left;
+}
+
+.me {
+    float: right;
+    background: #f26a3d;
+    color: #fff;
+}
+
+.him + .me {
+    border-bottom-right-radius: 5px;
+}
+
+.me + .me {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.me:last-of-type {
+    border-bottom-right-radius: 1.7rem;
+}
+
+.split {
+    overflow: auto;
+}
+
+.split > .col-6 {
+    width: 50%;
+    float: left;
+}
+
+.split > .col-4 {
+    width: 33.333333%;
+    float: left;
+}
+
+.split > .col-8 {
+    width: 66.666667%;
+    float: left;
+}
