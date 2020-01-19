@@ -14,8 +14,8 @@
 			{{/if}}
 			{{#if @labs.subscribers}}
 			<li class="nav-subscribe"><a href="{{@site.url}}/subscribe/"><i class="ic ic-mail"></i> {{t "Subscribe"}}</a></li>
-			<!-- {{else}}
-			<li class="nav-rss"><a href="{{@site.url}}/rss/"><i class="ic ic-rss"></i> {{t "Subscribe"}}</a></li> -->
+			{{else}}
+			<li class="nav-rss"><a href="{{@site.url}}/rss/"><i class="ic ic-rss"></i> {{t "Subscribe"}}</a></li>
 			{{/if}}
 		</ul>
 
@@ -23,7 +23,7 @@
 
 		<div class="nav-box">
 			{{#get "tags" limit="all"}}
-				{{tags separator=" &bull; "}}
+			{{tags separator=" &bull; "}}
 			{{/get}}
 		</div>
 

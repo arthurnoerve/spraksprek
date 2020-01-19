@@ -1,75 +1,77 @@
 {
-  "name": "genghis",
-  "description": "Ghost Theme",
-  "demo": "http://genghis.avgar.de",
-  "homepage": "http://genghis.noerve.com",
-  "version": "2.0.0",
-  "engines": {
-    "ghost": ">=2.1.0",
-    "ghost-api": "v2"
-  },
-  "license": "MIT",
-  "screenshots": {
-    "desktop": "src/screenshot-desktop.jpg",
-    "mobile": "src/screenshot-mobile.jpg"
-  },
-  "contributors": {
-    "name": "Arthur Schei Nørve",
-    "email": "arthur@noerve.com",
-    "url": "https://arthurnoerve.com"
-  },
-  "author": {
-    "name": "Peter Amende",
-    "email": "xoxo@zutrinken.com",
-    "url": "https://zutrinken.com"
-  },
-  "gpm": {
-    "type": "theme",
-    "categories": [
-      "Minimal",
-      "Personal Blogs"
+    "name": "spraksprek",
+    "description": "Ghost Theme",
+    "demo": "http://spraksprek.no",
+    "homepage": "http://spraksprek.no",
+    "version": "3.0.0",
+    "engines": {
+        "ghost": ">=2.1.0",
+        "ghost-api": "v2"
+    },
+    "license": "MIT",
+    "screenshots": {
+        "desktop": "src/screenshot-desktop.jpg",
+        "mobile": "src/screenshot-mobile.jpg"
+    },
+    "contributors": [
+        {
+            "name": "Arthur Schei Nørve",
+            "email": "arthur@noerve.com",
+            "url": "https://arthur.noerve.com"
+        }
+    ],
+    "author": {
+        "name": "Peter Amende",
+        "email": "xoxo@zutrinken.com",
+        "url": "https://zutrinken.com"
+    },
+    "gpm": {
+        "type": "theme",
+        "categories": [
+            "Minimal",
+            "Personal Blogs"
+        ]
+    },
+    "keywords": [
+        "ghost",
+        "ghost-theme",
+        "theme",
+        "languages"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/arthurnoerve/spraksprek.git"
+    },
+    "devDependencies": {
+        "autoprefixer": "^9.1.5",
+        "grunt": "^1.0.4",
+        "grunt-contrib-clean": "^1.1.0",
+        "grunt-contrib-compress": "^1.6.0",
+        "grunt-contrib-copy": "^1.0.0",
+        "grunt-contrib-uglify": "^3.4.0",
+        "grunt-contrib-watch": "^1.1.0",
+        "grunt-postcss": "^0.9.0",
+        "grunt-sass": "^2.1.0",
+        "load-grunt-tasks": "^3.5.2"
+    },
+    "config": {
+        "posts_per_page": 10,
+        "image_sizes": {
+            "s": {
+                "width": 320
+            },
+            "m": {
+                "width": 640
+            },
+            "l": {
+                "width": 960
+            },
+            "xl": {
+                "width": 1920
+            }
+        }
+    },
+    "browserslist": [
+        "defaults"
     ]
-  },
-  "keywords": [
-    "ghost",
-    "ghost-theme",
-    "theme",
-    "languages"
-  ],
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/arthurnoerve/genghis.git"
-  },
-  "devDependencies": {
-    "autoprefixer": "^9.1.5",
-    "grunt": "^1.0.4",
-    "grunt-contrib-clean": "^1.1.0",
-    "grunt-contrib-compress": "^1.6.0",
-    "grunt-contrib-copy": "^1.0.0",
-    "grunt-contrib-uglify": "^3.4.0",
-    "grunt-contrib-watch": "^1.1.0",
-    "grunt-postcss": "^0.9.0",
-    "grunt-sass": "^2.1.0",
-    "load-grunt-tasks": "^3.5.2"
-  },
-  "config": {
-    "posts_per_page": 10,
-    "image_sizes": {
-      "s": {
-        "width": 320
-      },
-      "m": {
-        "width": 640
-      },
-      "l": {
-        "width": 960
-      },
-      "xl": {
-        "width": 1920
-      }
-    }
-  },
-  "browserslist": [
-    "defaults"
-  ]
 }
