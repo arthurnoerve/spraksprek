@@ -1,35 +1,51 @@
 {{!< default}}
 
 {{#author}}
-<header id="blog-header"{{#if cover_image}} class="has-cover"{{else}}{{#if @blog.cover_image}} class="has-cover"{{/if}}{{/if}}>
+<header id="blog-header"{{#if cover_image}} class="has-cover"{{else}}{{#if @site.cover_image}} class="has-cover"{{/if}}{{/if}}>
 	<div class="inner">
 		<nav id="navigation">
-			{{#if @blog.logo}}
+			{{#if @site.logo}}
 			<span class="blog-logo">
-				<a href="{{@blog.url}}"><img src="{{@blog.logo}}" alt="{{t "Blog Logo"}}" /></a>
+				<a href="{{@site.url}}"><img src="{{@site.logo}}" alt="{{t "Blog Logo"}}" /></a>
 			</span>
 			{{else}}
 			<span id="home-button" class="nav-button">
-				<a class="home-button" href="{{@blog.url}}" title="{{t "Home"}}"><i class="ic ic-arrow-left"></i> {{t "Home"}}</a>
+				<a class="home-button" href="{{@site.url}}" title="{{t "Home"}}"><i class="ic ic-arrow-left"></i> {{t "Home"}}</a>
 			</span>
 			{{/if}}
-			{{#if @blog.navigation}}
+			{{#if @site.navigation}}
 			<span id="menu-button" class="nav-button">
 				<a class="menu-button"><i class="ic ic-menu"></i> {{t "Menu"}}</a>
 			</span>
 			{{/if}}
 		</nav>
 		{{#if cover_image}}
-		<div class="blog-cover cover" style="background-image: url('{{img_url cover_image}}');"></div>
+		<div class="blog-cover cover">
+			<img
+			srcset="{{img_url cover_image size="s"}} 320w,
+              {{img_url cover_image size="m"}} 640w,
+              {{img_url cover_image size="l"}} 960w,
+              {{img_url cover_image size="xl"}} 1920w"
+      src="{{img_url cover_image size="xl"}}"
+			alt="{{@site.title}}" />
+		</div>
 		{{else}}
-		{{#if @blog.cover_image}}
-		<div class="blog-cover cover" style="background-image: url('{{img_url @blog.cover}}');"></div>
+		{{#if @site.cover_image}}
+		<div class="blog-cover cover">
+			<img
+			srcset="{{img_url @site.cover_image size="s"}} 320w,
+              {{img_url @site.cover_image size="m"}} 640w,
+              {{img_url @site.cover_image size="l"}} 960w,
+              {{img_url @site.cover_image size="xl"}} 1920w"
+      src="{{img_url @site.cover_image size="xl"}}"
+			alt="{{@site.title}}" />
+		</div>
 		{{/if}}
 		{{/if}}
 	</div>
 </header>
 
-<section id="blog-author"{{#if cover_image}} class="has-cover"{{else}}{{#if @blog.cover_image}} class="has-cover"{{/if}}{{/if}}>
+<section id="blog-author"{{#if cover_image}} class="has-cover"{{else}}{{#if @site.cover_image}} class="has-cover"{{/if}}{{/if}}>
 	<div class="inner">
 
 		<aside class="post-author">
@@ -51,10 +67,10 @@
 					<span class="post-author-website"><i class="ic ic-link"></i> <a href="{{website}}">{{t "Website"}}</a></span>
 				{{/if}}
 				{{#if twitter}}
-					<span class="post-author-twitter"><i class="ic ic-twitter"></i> <a target="_blank" href="https://twitter.com/{{twitter}}">Twitter</a></span>
+					<span class="post-author-twitter"><i class="ic ic-twitter"></i> <a target="_blank" href="{{twitter_url}}">Twitter</a></span>
 				{{/if}}
 				{{#if facebook}}
-					<span class="post-author-facebook"><i class="ic ic-facebook"></i> <a target="_blank" href="https://facebook.com/{{facebook}}">Facebook</a></span>
+					<span class="post-author-facebook"><i class="ic ic-facebook"></i> <a target="_blank" href="{{facebook_url}}">Facebook</a></span>
 				{{/if}}
 			</div>
 			<div class="clear"></div>

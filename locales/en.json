@@ -1,6 +1,4 @@
 {
-    "% Post": "% Post",
-    "% Posts": "% Posts",
     "Blog Logo": "Blog Logo",
     "Close": "Close",
     "Get the latest posts delivered right to your inbox.": "Get the latest posts delivered right to your inbox.",
@@ -8,7 +6,6 @@
     "Languages": "Languages",
     "Menu": "Menu",
     "Newer Posts": "Newer Posts",
-    "No Posts": "No Posts",
     "Older Posts": "Older Posts",
     "Other tags": "Other tags",
     "Page": "Page",
@@ -21,6 +18,12 @@
     "Website": "Website",
     "Your email address": "Your email address",
     "by": "by",
-    "of": "of",
-    "on ": "on "
+    "on ": "on ",
+    "No Posts": "No Posts",
+    "% Post": "% Post",
+    "% Posts": "% Posts",
+    "This post was a collaboration between:": "This post was a collaboration between:",
+    "youremail@example.com": "youremail@example.com",
+    "1 min read": "1 min read",
+    "% min read": "% min read"
 }

@@ -1,6 +1,4 @@
 {
-    "% Post": "% innlegg",
-    "% Posts": "% innlegg",
     "Blog Logo": "Blogg logo",
     "Close": "Lukk",
     "Get the latest posts delivered right to your inbox.": "F\u00e5 de siste innleggene rett i innboksen",
@@ -8,10 +6,8 @@
     "Languages": "Spr\u00e5k",
     "Menu": "菜单",
     "Newer Posts": "Nyere",
-    "No Posts": "Ingen innlegg",
     "Older Posts": "Gamlere",
-    "Other tags": "Andre knagger",
-    "Page": "Side",
+    "Page {page} of {pages}": "Side {page} av {pages}",
     "Posts": "Innlegg",
     "Published with": "Publisert med",
     "Show Comments": "Vis kommentarer",
@@ -21,6 +17,12 @@
     "Website": "Nettside",
     "Your email address": "Din e-post adresse",
     "by": "av",
-    "of": "av",
-    "on ": "i "
+    "on ": "i ",
+    "No Posts": "Ingen innlegg",
+    "% Post": "% innlegg",
+    "% Posts": "% innlegg",
+    "This post was a collaboration between:": "Dette innlegget var et samarbeid mellom:",
+    "youremail@example.com": "dinepost@eksempel.com",
+    "1 min read": "1 min lest",
+    "% min read": "% min lest"
 }
