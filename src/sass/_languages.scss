@@ -9,3 +9,65 @@
 .arabic {
     font-family: 'Amiri', serif;
 }
+
+
+#footer {
+    padding: 6rem 0 0 0;
+}
+
+.footer-tags {
+    // border-bottom: 1px solid #e5e4e1;
+    padding: 1.5em 0;
+    margin-bottom: 2em;
+}
+
+.footer-tags .tags-name {
+    padding:0;
+    margin: 0 0 0.5em 0;
+    font-size: 2rem;
+}
+.footer-tags .tags:first-of-type {
+    margin-bottom: 1.5em;
+}
+
+.footer-tags a {
+    text-transform:capitalize;
+}
+
+
+.footer-tags .tags {
+	position: relative;
+	// max-width: 66.66666%;
+    width: 100%;
+	float: left;
+	display: flex;
+	flex-wrap: wrap;
+	@media only screen and (max-width: 640px) {
+		max-width: none;
+		float: none;
+		margin-bottom: 2rem;
+	}
+}
+
+.footer-tags .tags a {
+	display: inline-block;
+	margin-right: 0.5em;
+	margin-bottom: 0.5em;
+	padding: 0 1.5rem;
+	background: $color-primary;
+	font-size: 1.5em;
+	font-weight: 500;
+	line-height: 3rem;
+	text-align: center;
+	text-decoration: none;
+	color: #FFF;
+	border-radius: 2em;
+	transition: all ease 0.2s;
+	box-sizing: border-box;
+	white-space: nowrap;
+
+	&:focus,
+	&:hover {
+		background: $color-primary-active;
+	}
+}
