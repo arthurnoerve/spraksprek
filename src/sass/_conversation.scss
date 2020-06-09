@@ -1,6 +1,6 @@
 ul.conversation {
     list-style: none !important;
-    margin: 0;
+    margin: 2em auto;
     padding: 0;
     overflow: auto;
 }
@@ -16,7 +16,7 @@ ul.conversation li {
 }
 
 ul.conversation > li:before {
-    content: "";
+    content: "" !important;
 }
 
 .him {
