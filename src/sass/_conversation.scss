@@ -1,17 +1,17 @@
 ul.conversation {
     list-style: none !important;
-    margin: 2em auto;
-    padding: 0;
+    margin: 1em auto !important;
+    padding: 0 !important;
     overflow: auto;
+    min-width:500px;
 }
-
 ul.conversation li {
     font-size: 1.5rem;
     display: inline-block;
     clear: both;
     padding: 0.1rem 1.5rem;
     border-radius: 1.7rem;
-    margin-bottom: 2px;
+    margin-bottom: 5px;
     font-family: Helvetica, Arial, sans-serif;
 }
 
