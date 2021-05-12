@@ -54,7 +54,7 @@
 	margin-right: 0.5em;
 	margin-bottom: 0.5em;
 	padding: 0 1.5rem;
-	background: $color-primary;
+	background: var(--color-primary);
 	font-size: 1.5em;
 	font-weight: 500;
 	line-height: 3rem;
@@ -68,6 +68,6 @@
 
 	&:focus,
 	&:hover {
-		background: $color-primary-active;
+		background: var(--color-primary-active);
 	}
 }

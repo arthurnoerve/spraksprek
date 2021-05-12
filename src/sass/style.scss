@@ -7,9 +7,9 @@
 @import "fonts";
 @import "highlight";
 
-@import "conversation";
-@import "languages";
-@import "spraksprek";
+@import "spraksprek/conversation";
+@import "spraksprek/languages";
+@import "spraksprek/spraksprek";
 
 
 $breakpoint-large: 960px;
